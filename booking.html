@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Anjie Braids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book an Appointment</h1>
+    <form action="https://formspree.io/f/your-formspree-endpoint" method="POST" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="hairstyle">Hairstyle:</label>
+        <input type="text" id="hairstyle" name="hairstyle" required>
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <label for="location">Service Location:</label>
+        <select id="location" name="location">
+            <option value="shop">At Anjie's Place</option>
+            <option value="home">Home Service (+$50)</option>
+        </select>
+
+        <label for="proof">Upload Payment Proof:</label>
+        <input type="file" id="proof" name="proof" accept="image/*,.pdf" required>
+
+        <button type="submit">Submit Appointment</button>
+    </form>
+</body>
+</html>
