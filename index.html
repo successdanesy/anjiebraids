@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjie Braids</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+    <!-- HEADER SECTION -->
     <header>
-        <h1>Anjie Braids</h1>
-        <p>Professional Braiding Services in Canada</p>
+        <div class="logo">
+            <img src="img/logo-transparent.png" alt="Anjie Braids Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>  <!-- Corrected Font Awesome icon -->
+            </div>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="rules.html">Booking Rules</a>
-        <a href="booking.html">Book an Appointment</a>
-    </nav>
 
-    <section>
-        <h2>Welcome to Anjie Braids</h2>
-        <p>We offer high-quality braiding services for both men and women. Book an appointment today!</p>
-    </section>
+    <!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+      <h1>Welcome to Anjie Braids</h1>
+      <p>Professional Braiding Services Just for You</p>
+      <button onclick="scrollToSection('services')">View Services</button>
+      <button onclick="scrollToSection('booking')">Book an Appointment</button>
+    </div>
+  </section>
 
-    <footer>
-        <p>Contact: anjie@example.com | 📞 +1 123-456-7890</p>
-        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

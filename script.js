@@ -1,7 +1,8 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-    let fileInput = document.getElementById("proof");
-    if (fileInput.files.length === 0) {
-        event.preventDefault();
-        alert("Please upload proof of payment.");
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 });
