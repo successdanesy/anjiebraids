@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordions = document.querySelectorAll('.accordion');
+  
+      accordions.forEach(accordion => {
+        accordion.addEventListener('click', () => {
+          accordion.classList.toggle('active');
+          const panel = accordion.nextElementSibling;
+  
+          if (panel.style.display === 'block') {
+            panel.style.display = 'none';
+          } else {
+            panel.style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>  
+
 <body>
 
     <!-- HEADER SECTION -->
@@ -36,6 +55,86 @@
       <button onclick="scrollToSection('booking')">Book an Appointment</button>
     </div>
   </section>
+
+    <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>Welcome to Anjie Braids</h2>
+      <p>
+        At Anjie Braids, we specialize in premium braiding services for all genders. Whether you're visiting our studio or requesting a home service, we ensure top-tier care and creativity in every style. 
+      </p>
+      <p>
+        Convenient booking, clear rules, and direct communication – because your time and style matter.
+      </p>
+      <button onclick="scrollToSection('rules')">Read Our Rules</button>
+    </div>
+  </section>   
+  
+    <!-- RULES SECTION -->
+  <section class="rules-section">
+    <h2>Before You Book</h2>
+    <p>Please review the following rules carefully before proceeding to book your appointment.</p>
+  
+    <div class="accordion-container">
+      <div class="accordion-item">
+        <button class="accordion">💰 A $15 deposit is required to secure an appointment.</button>
+        <div class="panel">
+          <p>The deposit confirms your slot and is non-refundable after certain conditions.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">📦 Don’t book if your extension isn’t ready.</button>
+        <div class="panel">
+          <p>Ensure your braiding hair is ready before booking to avoid last-minute issues.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">✂️ Only pre-stretched extensions are used.</button>
+        <div class="panel">
+          <p>Additional charges may apply if your extensions are not pre-stretched.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">🧼 Hair must be clean and dry.</button>
+        <div class="panel">
+          <p>No oils or creams — come with fresh, clean hair for best results.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">⏰ Don’t be late.</button>
+        <div class="panel">
+          <p>Your appointment will be canceled 30 minutes after the scheduled time if you're late without a refund.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">❌ Cancel 48 hours in advance for a refund.</button>
+        <div class="panel">
+          <p>Refunds are only available for cancellations made 48 hours before the appointment.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">👥 Guests are allowed (not children).</button>
+        <div class="panel">
+          <p>You may bring a guest for support, but not children during your session.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">📌 No braiding hair is provided.</button>
+        <div class="panel">
+          <p>You must bring your own. If not pre-stretched, drop it off a day early.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">❓ Got questions? Just ask.</button>
+        <div class="panel">
+          <p>Clarify anything with me ahead of time to avoid confusion.</p>
+        </div>
+      </div>
+    </div>
+  
+    <button class="continue-btn">I Agree, Continue to Booking</button>
+  </section>
+  
 
     <script src="script.js"></script>
 </body>

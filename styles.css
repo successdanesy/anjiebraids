@@ -110,6 +110,132 @@
     background-color: #9E1F46; /* Deep Burgundy */
     color: #FDF3E7; /* Soft Beige */
   }
+
+  /* About Section */
+  .about {
+    background-color: #FDF3E7;
+    color: #15475E;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #15475E;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .about button {
+    background-color: #9E1F46;
+    color: #FDF3E7;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .about button:hover {
+    background-color: #15475E;
+    color: #FDF3E7;
+  }
+  
+  /*rules section*/
+  .rules-section {
+    background-color: #15475E;
+    color: #FDF3E7;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .rules-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #FDF3E7;
+  }
+  
+  .rules-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+  }
+  
+  .accordion-container {
+    margin-bottom: 30px;
+  }
+  
+  .accordion {
+    background-color: #9E1F46;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .accordion:hover {
+    background-color: #FDF3E7;
+    color: #15475E;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #FDF3E7;
+    display: none;
+    overflow: hidden;
+    border-left: 4px solid #9E1F46;
+    border-right: 4px solid #9E1F46;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .panel p {
+    color: #15475E;
+    padding: 10px 0;
+  }
+  
+  .continue-btn {
+    background-color: #FDF3E7;
+    color: #15475E;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .continue-btn:hover {
+    background-color: #9E1F46;
+    color: #fff;
+  }
+  
+  
   
   /* Responsive Design */
   @media screen and (max-width: 768px) {
@@ -142,6 +268,17 @@
   
     .hero button {
       font-size: 0.9em;
+    }
+
+    .about {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .about-image img {
+      max-width: 100%;
+      margin-bottom: 30px;
     }
   }
   
