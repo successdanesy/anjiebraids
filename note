@@ -1,0 +1,7 @@
+<button class="accordion">
+        <span></span>
+        <i class="fas fa-chevron-down icon"></i>
+      </button>
+      <div class="panel">
+        <p></p>
+      </div>
