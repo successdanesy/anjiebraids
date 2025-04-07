@@ -1,0 +1,39 @@
+<!-- BOOKING SECTION -->
+
+<section id="booking" class="booking-section">
+    <div class="container">
+      <h2 class="section-title">Book Your Appointment</h2>
+      <p class="section-subtitle">Choose your preferred date, time, and service below</p>
+      
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        
+        <label for="service">Select Service:</label>
+        <select name="service" id="service" required>
+          <option value="">-- Please Choose --</option>
+          <option value="Blow Dry">Blow Dry</option>
+          <option value="Coloring">Coloring</option>
+          <option value="Styling">Styling</option>
+          <option value="Haircut">Haircut</option>
+        </select>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <input type="time" name="time" required>
+        
+        <textarea name="message" placeholder="Any special requests?" rows="4"></textarea>
+        
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          I’ve read and agree to the booking rules.
+        </label>
+  
+        <button type="submit" class="submit-btn">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+  
