@@ -1,4 +1,33 @@
-<!-- BOOKING SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjie Braids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+      accordion.addEventListener('click', () => {
+        accordion.classList.toggle('active');
+        const panel = accordion.nextElementSibling;
+
+        if (panel.style.display === 'block') {
+          panel.style.display = 'none';
+        } else {
+          panel.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>  
+
+<body>
+  <!-- BOOKING SECTION -->
 
 <section id="booking" class="booking-section">
     <div class="container">
@@ -36,4 +65,7 @@
       </form>
     </div>
   </section>
-  
+
+
+</body>
+ </html> 
