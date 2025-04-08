@@ -158,13 +158,27 @@
   /*hairstyles section*/
   .hairstyles-section {
     padding: 2rem;
-    background: #fdfdfd;
+    background: #15475E;
+    color: #fdfdfd;
+    
   }
 
   .hairstyles-section h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: #fdfdfd
+  }
+
+  .hairstyles-section h3 {
+    color: #15475E;
+  }
+
+  .hairstyles-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #000000;
   }
 
   .hairstyles-grid {
@@ -209,6 +223,7 @@
     color: #666;
   }
 
+  /* Extras Section */
   .extras-list {
     margin-top: 2rem;
     background: #fff7f7;
@@ -266,7 +281,7 @@
   .extras-section h2 {
     font-size: 2em;
     margin-bottom: 40px;
-    color: #a0522d;
+    color: #15475E;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -297,7 +312,7 @@
   .extra-card i {
     font-size: 32px;
     margin-bottom: 15px;
-    color: #d2691e;
+    color: #9E1F46;
   }
   
   .extra-card h3 {
