@@ -69,6 +69,82 @@
       <button onclick="scrollToSection('rules')">Read Our Rules</button>
     </div>
   </section>   
+
+  <!-- Hair Styles Section -->
+<section class="hairstyles-section" id="hairstyles">
+  <h2>Hair Styles</h2>
+  <div class="hairstyles-grid">
+    <div class="style-item" onclick="openModal('img/Fulani braids 140$.jpeg')">
+      <img src="img/Fulani braids 140$.jpeg" alt="Fulani Braids">
+      <div class="style-info">
+        <h3>Fulani Braids</h3>
+        <p>$140</p>
+      </div>
+    </div>
+    <div class="style-item" onclick="openModal('img/Jumbo 80$.jpeg')">
+      <img src="img/Jumbo 80$.jpeg" alt="Jumbo Braids">
+      <div class="style-info">
+        <h3>Jumbo Braids</h3>
+        <p>$80</p>
+      </div>
+    </div>
+    <div class="style-item" onclick="openModal('img/Large braids 100$.jpeg')">
+      <img src="img/Large braids 100$.jpeg" alt="Large Braids">
+      <div class="style-info">
+        <h3>large Braids</h3>
+        <p>$100</p>
+      </div>
+    </div>
+    <div class="style-item" onclick="openModal('img/Medium braids $150.jpeg')">
+      <img src="img/Medium braids $150.jpeg" alt="Medium Braids">
+      <div class="style-info">
+        <h3>Medium Braids</h3>
+        <p>$150</p>
+      </div>
+    </div>
+    <div class="style-item" onclick="openModal('img/Men’s braids 40.jpeg')">
+      <img src="img/Men’s braids 40.jpeg" alt="Men's Braids">
+      <div class="style-info">
+        <h3>Men's Braids</h3>
+        <p>$40</p>
+      </div>
+    </div>
+
+    <div class="style-item" onclick="openModal('img/Small braids $220.jpeg')">
+      <img src="img/Small braids $220.jpeg" alt="Small Braids">
+      <div class="style-info">
+        <h3>Small Braids</h3>
+        <p>$220</p>
+      </div>
+    </div>
+
+    <div class="style-item" onclick="openModal('img/Stitch braids $80.jpeg')">
+      <img src="img/Stitch braids $80.jpeg" alt="Stitch braids">
+      <div class="style-info">
+        <h3>Stitch braids</h3>
+        <p>$80</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="extras-list">
+    <h3>Extras</h3>
+    <ul>
+      <li>Boho braids: +$20 (Small Braids: +$30)</li>
+      <li>Blow drying: $20</li>
+      <li>Braiding hair stretch: $20</li>
+      <li>Home service: starts from $50 (location-dependent)</li>
+      <li>Beads: +$20 (Medium), +$30 (Small Braids)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
   
     <!-- RULES SECTION -->
     <section class="rules-section">
