@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeModal() {
     document.getElementById('imageModal').style.display = "none";
   }
+
+  //fuction for the accordion in the rules section
+  function toggleAccordion(element) {
+    const item = element.parentElement;
+    const allItems = document.querySelectorAll('.accordion-item');
+    
+    // Optionally allow only one open at a time
+    allItems.forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+
+    item.classList.toggle('active');
+  }

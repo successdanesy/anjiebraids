@@ -116,5 +116,33 @@
     .logo img {
       max-height: 50px;
     }
+
+    @media screen and (max-width: 400px) {
+        .hero h1 {
+          font-size: 1.6em;
+        }
+      
+        .hero p {
+          font-size: 1em;
+        }
+      
+        .hero button {
+          font-size: 0.8em;
+          padding: 6px 12px;
+        }
+      
+        .style-item img {
+          height: 140px;
+        }
+      
+        .booking-section .section-title {
+          font-size: 20px;
+        }
+      
+        .footer-note {
+          font-size: 11px;
+        }
+      }
+      
   }
   
