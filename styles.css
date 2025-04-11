@@ -11,70 +11,79 @@
   }
   
   /* Navbar Styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px; /* reduced padding */
-    background-color: transparent;
-    color: #fff;
-    position: absolute;
-    width: 100%;
+  /* Header (default transparent) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1000;
+}
+
+/* Add a class for scrolled state */
+header.scrolled {
+  background-color: #15475E; /* Blue background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Slide Down Sticky Header */
+.main-head.slidedown {
+  position: fixed;
+  background: #15475E; /* Blue */
+  width: 100%;
+  animation: slidedown 0.3s forwards;
+  z-index: 1000;
+}
+
+@keyframes slidedown {
+  from {
+    top: -250px;
+  }
+  to {
     top: 0;
-    z-index: 999;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+  /* Logo */
+  .logo img {
+    max-height: 80px;
+    width: auto;
   }
   
-  /* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #15475E; 
-    color: #FDF3E7;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-  } */
-  
-  .header-logo img {
-    width: 300px;  /* Increase width */
-    height: auto;
-    padding: 10px;
-  }  
-
-.logo img {
-  max-height: 300px; /* Increased from 50px */
-  width: auto;
-  transition: all 0.3s ease;
-}
-  
+  /* Navigation */
   nav {
     display: flex;
     align-items: center;
   }
   
   .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
+    gap: 25px;
   }
   
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    color: #FDF3E7; /* Soft Beige */
+  .nav-links li a {
+    color: #fff;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1rem;
   }
   
+  /* Menu icon */
   .menu-icon {
     display: none;
-    font-size: 1.5em;
+    font-size: 1.8rem;
+    color: #fff;
     cursor: pointer;
-    color: #FDF3E7; /* Soft Beige */
-  }
+  }  
   
   /* Hero Section */
   .hero {

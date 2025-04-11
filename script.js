@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//function for sidebar menu
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-links').classList.toggle('active');
+});
+
+
+
 
 //JavaScript for Modal
   function openModal(src) {
@@ -30,3 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     item.classList.toggle('active');
   }
+
+  //function for sticky navbar with color when scrolling
+  const mainMenu = document.querySelector('.main-head');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    mainMenu.classList.add('slidedown');
+  } else {
+    mainMenu.classList.remove('slidedown');
+  }
+});

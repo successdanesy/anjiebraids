@@ -41,6 +41,28 @@
   
   /* Mobile Devices (768px) */
   @media screen and (max-width: 768px) {
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      flex-direction: column;
+      background-color: #f5f5dc; /* Beige */
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+    
     .about {
       flex-direction: column;
       padding: 40px 20px;
