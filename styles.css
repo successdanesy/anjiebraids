@@ -78,12 +78,61 @@ header.scrolled {
   }
   
   /* Menu icon */
-  .menu-icon {
-    display: none;
-    font-size: 1.8rem;
-    color: #fff;
-    cursor: pointer;
-  }  
+/* Base Hamburger Styles */
+.t-menuburger {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  background: transparent;
+  border: none;
+  z-index: 1001;
+}
+
+.t-menuburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #FDF3E7;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.t-menuburger span:nth-child(1) {
+  top: 0;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+  top: 10px;
+}
+.t-menuburger span:nth-child(4) {
+  top: 20px;
+}
+
+/* When Active - Turns into X */
+.t-menuburger.active span:nth-child(1),
+.t-menuburger.active span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.t-menuburger.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.t-menuburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu-icon {
+  display: none;
+}
+  
   
   /* Hero Section */
   .hero {

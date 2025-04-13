@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const navLinks = document.querySelector(".nav-links");
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav-links");
 
-    menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuIcon.classList.toggle("active"); // <-- Adds/removes the .active class for the X
+  });
 });
+
 
 //function for sidebar menu
 document.getElementById('menu-toggle').addEventListener('click', function () {
   document.getElementById('nav-links').classList.toggle('active');
 });
-
-
 
 
 //JavaScript for Modal
