@@ -12,7 +12,8 @@
   
   /* Navbar Styles */
   /* Header (default transparent) */
-header {
+.main-header {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,19 +27,10 @@ header {
   z-index: 1000;
 }
 
-/* Add a class for scrolled state */
-header.scrolled {
-  background-color: #15475E; /* Blue background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow */
-}
-
-/* Slide Down Sticky Header */
-.main-head.slidedown {
-  position: fixed;
-  background: #15475E; /* Blue */
-  width: 100%;
+.main-header.slidedown {
+  background-color: #15475E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   animation: slidedown 0.3s forwards;
-  z-index: 1000;
 }
 
 @keyframes slidedown {
@@ -47,7 +39,6 @@ header.scrolled {
   }
   to {
     top: 0;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -78,6 +69,20 @@ header.scrolled {
   }
   
   /* Menu icon */
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.4s ease;
+  }
 /* Base Hamburger Styles */
 .t-menuburger {
   display: inline-block;

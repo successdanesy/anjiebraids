@@ -4,14 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-    menuIcon.classList.toggle("active"); // <-- Adds/removes the .active class for the X
+    menuIcon.classList.toggle("active");
   });
-});
 
+  // Sticky scroll color change
+  const mainHeader = document.querySelector('.main-header');
 
-//function for sidebar menu
-document.getElementById('menu-toggle').addEventListener('click', function () {
-  document.getElementById('nav-links').classList.toggle('active');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      mainHeader.classList.add('slidedown');
+    } else {
+      mainHeader.classList.remove('slidedown');
+    }
+  });
 });
 
 
@@ -37,14 +42,3 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
 
     item.classList.toggle('active');
   }
-
-  //function for sticky navbar with color when scrolling
-  const mainMenu = document.querySelector('.main-head');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    mainMenu.classList.add('slidedown');
-  } else {
-    mainMenu.classList.remove('slidedown');
-  }
-});
