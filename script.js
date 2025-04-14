@@ -56,4 +56,25 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCaption.innerHTML = captionText;
 }
 
+//function to allow bookings only on weekends
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  const dateTimeInput = document.getElementById('date').value;
+  const errorDiv = document.getElementById('dateError');
+
+  if (!dateTimeInput) return;
+
+  const appointmentDate = new Date(dateTimeInput);
+  const day = appointmentDate.getDay(); // 0 (Sun) to 6 (Sat)
+  const hour = appointmentDate.getHours();
+
+  const isWeekend = (day === 0 || day === 6);
+  const isInTimeRange = (hour >= 10 && hour < 21); // 10am - 9pm (before 21)
+
+  if (!isWeekend || !isInTimeRange) {
+    errorDiv.style.display = 'block';
+    e.preventDefault();
+  } else {
+    errorDiv.style.display = 'none';
+  }
+});
   

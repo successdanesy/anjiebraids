@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Appointment</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - Anjie Braids</title>
+  <link rel="stylesheet" href="bookings.css" />
+  <link rel="stylesheet" href="interac-media-queries.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(accordion => {
-      accordion.addEventListener('click', () => {
-        accordion.classList.toggle('active');
-        const panel = accordion.nextElementSibling;
-
-        if (panel.style.display === 'block') {
-          panel.style.display = 'none';
-        } else {
-          panel.style.display = 'block';
-        }
-      });
-    });
-  });
-</script>  
 
 <body>
-  <!-- BOOKING SECTION -->
 
-<section id="booking" class="booking-section">
-    <div class="container">
-      <h2 class="section-title">Book Your Appointment</h2>
-      <p class="section-subtitle">Choose your preferred date, time, and service below</p>
-      
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        
-        <label for="service">Select Service:</label>
-        <select name="service" id="service" required>
-          <option value="">-- Please Choose --</option>
-          <option value="Blow Dry">Blow Dry</option>
-          <option value="Coloring">Coloring</option>
-          <option value="Styling">Styling</option>
-          <option value="Haircut">Haircut</option>
-        </select>
-        
-        <label for="date">Preferred Date:</label>
-        <input type="date" name="date" required>
-        
-        <label for="time">Preferred Time:</label>
-        <input type="time" name="time" required>
-        
-        <textarea name="message" placeholder="Any special requests?" rows="4"></textarea>
-        
-        <label class="consent">
-          <input type="checkbox" name="consent" required>
-          I’ve read and agree to the booking rules.
-        </label>
-  
-        <button type="submit" class="submit-btn">Confirm Booking</button>
-      </form>
+<!-- HEADER -->
+<header class="main-header">
+  <div class="logo">
+    <img src="img/logo-transparent.png" alt="Anjie Braids Logo">
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-scissors"></i> Services</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-calendar-check"></i> Booking</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+    <button type="button" class="t-menuburger menu-icon" aria-label="Navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section">
+  <div class="booking-container">
+    <h2>Book Your Braid Appointment</h2>
+    <p>Please fill out the form below. Appointments available only on <strong>Saturdays & Sundays, 10 AM – 9 PM</strong>.</p>
+
+    <form id="bookingForm" action="https://formspree.io/f/mgvaqewn" method="POST" class="booking-box">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label for="style">Preferred Braiding Style</label>
+      <input type="text" name="preferred_style" id="style">
+
+      <label for="date">Preferred Appointment Date/Time</label>
+      <input type="datetime-local" name="appointment_request" id="date" required>
+      <div class="booking-error" id="dateError">⚠ Appointments are only accepted on Saturdays and Sundays between 10:00 AM and 9:00 PM.</div>
+
+      <label for="notes">Additional Notes</label>
+      <textarea name="notes" id="notes" rows="4"></textarea>
+
+      <button type="submit" class="booking-btn">Book My Braid</button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h2>Get in Touch</h2>
+      <p>Have questions before booking? Reach out anytime!</p>
+      <div class="button-group">
+        <a href="tel:+1709219-6887" class="contact-button"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="mailto:anjiebraids@gmail.com" class="contact-button"><i class="fa fa-envelope"></i> Email Me</a>
+        <a href="https://wa.me/17092196887" class="contact-button"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a href="http://Instagram.com/anjie_braids" target="_blank" class="contact-button"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://maps.google.com/?q=St.+John's,+Newfoundland" target="_blank" class="contact-button"><i class="fa-solid fa-location-dot"></i> St. John's, Newfoundland</a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>Developed by <strong>Success Chukwuemeka</strong>. <br> Let's connect:</p>
+    <div class="social-icons">
+      <a href="mailto:successdanesy@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/success-chu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/successdanesy" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/2347088193394" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <p class="footer-note">© 2025 Success Chukwuemeka. All rights reserved.</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
- </html> 
+</html>
