@@ -4,8 +4,8 @@
 
 /* Tablets and Below (1024px) */
 @media screen and (max-width: 1024px) {
-    header {
-      padding: 10px 20px;
+    .main-header {
+      padding: 12px 25px;
     }
   
     .hero h1 {
@@ -58,7 +58,9 @@
   
   /* Mobile Devices (768px) */
   @media screen and (max-width: 768px) {
-
+    .main-header {
+      padding: 10px 20px;
+    }
     .menu-icon {
       display: flex;
     }
@@ -150,6 +152,10 @@
   
   /* Small Phones (576px) */
   @media screen and (max-width: 576px) {
+    .main-header {
+      padding: 5px 15px;
+    }
+
     .hero h1 {
       font-size: 2em;
     }
@@ -221,6 +227,16 @@
   }
 
     @media screen and (max-width: 400px) {
+      .main-header {
+        padding: 6px 10px;
+      }
+
+      .logo img {
+        max-height: 70px;
+        width: auto;
+        transition: all 0.3s ease;
+      }
+
         .hero h1 {
           font-size: 1.6em;
         }
