@@ -200,6 +200,52 @@
   background-color: #15475E;
 }
 
+/* ========== EXTRAS CHECKBOX GROUP ========== */
+.extras-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0 20px;
+}
+
+.extras-options label {
+  font-size: 0.95rem;
+  color: #15475E;
+  font-weight: 500;
+}
+
+.booking-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+/* ========== PRICE SUMMARY ========== */
+.price-summary {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.price-summary h4 {
+  margin-bottom: 5px;
+  color: #9E1F46;
+  font-size: 1.1rem;
+}
+
+#priceOutput {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #15475E;
+}
+
 /*Contacts section*/
 .contact {
   padding: 40px 20px;

@@ -36,27 +36,62 @@
     <p>Please fill out the form below. Appointments available only on <strong>Saturdays & Sundays, 10 AM – 9 PM</strong>.</p>
 
     <form id="bookingForm" action="https://formspree.io/f/mgvaqewn" method="POST" class="booking-box">
+      <!-- Name -->
       <label for="name">Full Name</label>
       <input type="text" name="name" id="name" required>
-
+    
+      <!-- Email -->
       <label for="email">Email Address</label>
       <input type="email" name="email" id="email" required>
-
+    
+      <!-- Phone -->
       <label for="phone">Phone Number</label>
       <input type="tel" name="phone" id="phone" required>
+    
+      <!-- Style Selection -->
+      <label for="hairstyle">Select Hairstyle</label>
+      <select name="hairstyle" id="hairstyle" required>
+        <option value="">-- Choose a style --</option>
+        <option value="Fulani Braids - $140">Fulani Braids – $140</option>
+        <option value="Jumbo Braids - $80">Jumbo Braids – $80</option>
+        <option value="Large Braids - $100">Large Braids – $100</option>
+        <option value="Medium Braids - $150">Medium Braids – $150</option>
+        <option value="Small Braids - $220">Small Braids – $220</option>
+        <option value="Men's Braids - $40">Men’s Braids – $40</option>
+        <option value="Stitch Braids - $80">Stitch Braids – $80</option>
+      </select>
+    
+      <!-- Extras -->
+<label for="extras">Select Any Extras (optional)</label>
+<div class="extras-options minimalist-extras">
+  <div><input type="checkbox" name="extras" value="Home Service" id="extra1"><label for="extra1">Home Service (+$50+)</label></div>
+  <div><input type="checkbox" name="extras" value="Boho Braids" id="extra2"><label for="extra2">Boho Braids (+$20/$30)</label></div>
+  <div><input type="checkbox" name="extras" value="Blow Drying" id="extra3"><label for="extra3">Blow Drying (+$20)</label></div>
+  <div><input type="checkbox" name="extras" value="Hair Stretch" id="extra4"><label for="extra4">Hair Stretch (+$20)</label></div>
+  <div><input type="checkbox" name="extras" value="Beads Medium" id="extra5"><label for="extra5">Beads - Medium (+$20)</label></div>
+  <div><input type="checkbox" name="extras" value="Beads Small" id="extra6"><label for="extra6">Beads - Small (+$30)</label></div>
+</div>
 
-      <label for="style">Preferred Braiding Style</label>
-      <input type="text" name="preferred_style" id="style">
 
+      <!-- Live Price Estimate -->
+<div class="price-summary">
+  <h4>Estimated Total:</h4>
+  <p id="priceOutput">$0</p>
+</div>
+
+    
+      <!-- Date/Time -->
       <label for="date">Preferred Appointment Date/Time</label>
       <input type="datetime-local" name="appointment_request" id="date" required>
-      <div class="booking-error" id="dateError">⚠ Appointments are only accepted on Saturdays and Sundays between 10:00 AM and 9:00 PM.</div>
-
+      <div class="booking-error" id="dateError">⚠ Appointments only accepted on Saturdays & Sundays between 10AM and 9PM.</div>
+    
+      <!-- Notes -->
       <label for="notes">Additional Notes</label>
       <textarea name="notes" id="notes" rows="4"></textarea>
-
+    
       <button type="submit" class="booking-btn">Book My Braid</button>
     </form>
+    
   </div>
 </section>
 

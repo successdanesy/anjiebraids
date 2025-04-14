@@ -77,4 +77,48 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
     errorDiv.style.display = 'none';
   }
 });
+
+//function for live price display
+const stylePrices = {
+  "Fulani Braids - $140": 140,
+  "Jumbo Braids - $80": 80,
+  "Large Braids - $100": 100,
+  "Medium Braids - $150": 150,
+  "Small Braids - $220": 220,
+  "Men's Braids - $40": 40,
+  "Stitch Braids - $80": 80
+};
+
+const extrasPrices = {
+  "Home Service": 50, // base rate
+  "Boho Braids": 20,
+  "Blow Drying": 20,
+  "Hair Stretch": 20,
+  "Beads Medium": 20,
+  "Beads Small": 30
+};
+
+const styleSelect = document.getElementById('hairstyle');
+const checkboxes = document.querySelectorAll('input[name="extras"]');
+const priceOutput = document.getElementById('priceOutput');
+
+function updatePrice() {
+  let total = 0;
+
+  const selectedStyle = styleSelect.value;
+  if (selectedStyle && stylePrices[selectedStyle]) {
+    total += stylePrices[selectedStyle];
+  }
+
+  checkboxes.forEach(box => {
+    if (box.checked && extrasPrices[box.value]) {
+      total += extrasPrices[box.value];
+    }
+  });
+
+  priceOutput.textContent = `$${total}`;
+}
+
+styleSelect.addEventListener('change', updatePrice);
+checkboxes.forEach(box => box.addEventListener('change', updatePrice));
   
