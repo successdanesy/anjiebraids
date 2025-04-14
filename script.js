@@ -42,3 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     item.classList.toggle('active');
   }
+
+  //function to open the modal with a caption
+  function openModal(src, captionText = "") {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+  
+    modal.style.display = "block";
+    modalImg.src = src;
+    modalCaption.innerHTML = captionText;
+  }
+  
+  

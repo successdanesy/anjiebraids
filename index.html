@@ -86,58 +86,104 @@
   <h2>Hair Styles</h2>
   <p class="section-intro">Click on any image for a closer view and see what suits your vibe best!</p>
   <div class="hairstyles-grid">
-    <div class="style-item" onclick="openModal('img/Fulani braids 140$.jpeg')">
+    <div class="style-item" onclick="openModal('img/Fulani braids 140$.jpeg', 'Fulani Braids <br> $140')">
       <img src="img/Fulani braids 140$.jpeg" alt="Fulani Braids">
       <div class="style-info">
         <h3>Fulani Braids</h3>
         <p>$140</p>
       </div>
     </div>
-    <div class="style-item" onclick="openModal('img/Jumbo 80$.jpeg')">
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Fulani Braids <br> $140</div>
+</div>
+
+<div class="style-item" onclick="openModal('img/Jumbo 80$.jpeg', 'Jumbo Braids <br> $80')">
       <img src="img/Jumbo 80$.jpeg" alt="Jumbo Braids">
       <div class="style-info">
         <h3>Jumbo Braids</h3>
         <p>$80</p>
       </div>
     </div>
-    <div class="style-item" onclick="openModal('img/Large braids 100$.jpeg')">
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Jumbo Braids <br> $80</div>
+</div>
+
+    <div class="style-item" onclick="openModal('img/Large braids 100$.jpeg', 'Large Braids <br> $100')">
       <img src="img/Large braids 100$.jpeg" alt="Large Braids">
       <div class="style-info">
         <h3>large Braids</h3>
         <p>$100</p>
       </div>
     </div>
-    <div class="style-item" onclick="openModal('img/Medium braids $150.jpeg')">
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Large Braids <br> $100</div>
+</div>
+
+    <div class="style-item" onclick="openModal('img/Medium braids $150.jpeg', 'Medium Braids <br> $150')">
       <img src="img/Medium braids $150.jpeg" alt="Medium Braids">
       <div class="style-info">
         <h3>Medium Braids</h3>
         <p>$150</p>
       </div>
     </div>
-    <div class="style-item" onclick="openModal('img/Men’s braids 40.jpeg')">
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Medium Braids <br> $150</div>
+</div>
+
+    <div class="style-item" onclick="openModal('img/Men’s braids 40.jpeg', 'Men\'s Braids <br> $40')">
       <img src="img/Men’s braids 40.jpeg" alt="Men's Braids">
       <div class="style-info">
         <h3>Men's Braids</h3>
         <p>$40</p>
       </div>
     </div>
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Men's Braids <br> $40</div>
+</div>
 
-    <div class="style-item" onclick="openModal('img/Small braids $220.jpeg')">
+
+    <div class="style-item" onclick="openModal('img/Small braids $220.jpeg', 'Small Braids <br> $220')">
       <img src="img/Small braids $220.jpeg" alt="Small Braids">
       <div class="style-info">
         <h3>Small Braids</h3>
         <p>$220</p>
       </div>
     </div>
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Small Braids <br> $220</div>
+</div>
 
-    <div class="style-item" onclick="openModal('img/Stitch braids $80.jpeg')">
+    <div class="style-item" onclick="openModal('img/Stitch braids $80.jpeg', 'Stitch Braids <br> $80')">
       <img src="img/Stitch braids $80.jpeg" alt="Stitch braids">
       <div class="style-info">
         <h3>Stitch braids</h3>
         <p>$80</p>
       </div>
     </div>
-    
+    <!-- Modal for Image Preview -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Stitch Braids <br> $80</div> 
+  </div>
   </div>
 </section>
 

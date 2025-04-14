@@ -321,6 +321,74 @@
     color: #666;
   }
 
+  .modal { 
+    display: none;
+    position: fixed;
+    z-index: 9999; /* Increased to ensure it sits on top of sticky headers */
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    z-index: 10000; /* Extra safe */
+    animation: slideDownFade 0.5s ease;
+  }
+
+  .modal.fade-out .modal-content {
+    animation: slideUpFade 0.4s ease forwards;
+  }
+
+  .modal-caption {
+    color: #fdf3e7;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-style: italic;
+  }  
+  
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001; /* Ensure it's above even sticky headers */
+  }
+
+  @keyframes slideUpFade {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }  
+
+  @keyframes slideDownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Extras Section */
   .extras-list {
     margin-top: 2rem;
@@ -336,38 +404,6 @@
   .extras-list ul {
     list-style: disc;
     padding-left: 1.5rem;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-
-  .modal-content {
-    display: block;
-    margin: auto;
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 10px;
-  }
-
-  .close {
-    position: absolute;
-    top: 30px;
-    right: 45px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1000;
   }
   
   .extras-section {
