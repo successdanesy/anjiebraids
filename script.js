@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.querySelector(".menu-icon");
   const navLinks = document.querySelector(".nav-links");
+  const header = document.querySelector(".main-header");
 
   menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
     menuIcon.classList.toggle("active");
+    header.classList.toggle("menu-open"); // Toggles background on header
   });
 
   // Sticky scroll color change
@@ -45,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //function to open the modal with a caption
   function openModal(src, captionText = "") {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const modalCaption = document.getElementById('modalCaption');
-  
-    modal.style.display = "block";
-    modalImg.src = src;
-    modalCaption.innerHTML = captionText;
-  }
-  
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const modalCaption = document.getElementById('modalCaption');
+
+  modal.style.display = "block";
+  modalImg.src = src;
+  modalCaption.innerHTML = captionText;
+}
+
   
