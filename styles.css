@@ -30,7 +30,7 @@
 .main-header.slidedown {
   background-color: #15475E;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  animation: slidedown 0.3s forwards;
+  animation: slidedown 0.5s forwards;
 }
 
 @keyframes slidedown {
@@ -41,7 +41,6 @@
     top: 0;
   }
 }
-
 
   /* Logo */
   .logo img {
