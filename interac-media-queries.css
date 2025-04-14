@@ -1,0 +1,174 @@
+/* ======================
+   INTERAC MEDIA QUERIES
+   ====================== */
+
+/* Tablets and below (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .interac-container h2 {
+    font-size: 2rem;
+  }
+
+  .interac-container p {
+    font-size: 1.1rem;
+  }
+
+  .interac-btn {
+    padding: 12px 20px;
+  }
+
+  .contact-text h2 {
+    font-size: 2rem;
+  }
+
+  .contact-text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #15475E;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .interac-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .interac-container p {
+    font-size: 1rem;
+  }
+
+  .interac-box {
+    padding: 20px;
+  }
+
+  .contact-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Phones (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .interac-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .interac-container p {
+    font-size: 0.95rem;
+  }
+
+  .interac-box code {
+    font-size: 1rem;
+  }
+
+  .interac-btn {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .contact-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .main-header {
+        padding: 10px 15px;
+      }
+    
+      .logo img {
+        max-height: 45px;
+      }
+    
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #15475E;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease-in-out;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+      }
+  
+      .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+        display: flex;
+      }
+    
+      .interac-section {
+        padding: 110px 15px 50px; /* Top, side, and bottom padding */
+      }
+    
+      .interac-container h2 {
+        font-size: 1.8rem;
+      }
+    
+      .interac-container p,
+      .interac-box h3,
+      .interac-box code {
+        font-size: 1rem;
+      }
+    
+      .interac-btn {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+      }
+    
+      .contact-text h2 {
+        font-size: 1.6rem;
+      }
+    
+      .contact-text p {
+        font-size: 1rem;
+      }
+    
+      .contact-button {
+        width: 100%;
+        justify-content: center;
+      }
+    
+      .footer-content p {
+        font-size: 14px;
+      }
+    
+      .footer-note {
+        font-size: 12px;
+      }
+    }

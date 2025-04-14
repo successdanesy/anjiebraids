@@ -552,6 +552,26 @@ display: none;
   color: #fff;
 }
 
+/* .button-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.alt-btn {
+  background-color: transparent;
+  color: #FDF3E7;
+  border: 2px solid #FDF3E7;
+}
+
+.alt-btn:hover {
+  background-color: #FDF3E7;
+  color: #15475E;
+} */
+
+
 /* booking section */
 .booking-section {
   background-color: #f4f1ec;
