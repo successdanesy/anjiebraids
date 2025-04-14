@@ -201,18 +201,6 @@
 }
 
 /* ========== EXTRAS CHECKBOX GROUP ========== */
-.extras-options {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 0 20px;
-}
-
-.extras-options label {
-  font-size: 0.95rem;
-  color: #15475E;
-  font-weight: 500;
-}
 
 .booking-box select {
   width: 100%;
@@ -223,6 +211,49 @@
   background-color: #f9f9f9;
   font-size: 1rem;
 }
+.custom-checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.custom-checkbox-group input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 2px solid #9E1F46;
+  border-radius: 0.5em;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  color: #9E1F46;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  text-align: center;
+}
+
+.custom-checkbox-group input[type="checkbox"]:checked + label {
+  background-color: #9E1F46;
+  color: #fff;
+  border-color: #9E1F46;
+}
+
+/* Responsive for both */
+@media (max-width: 600px) {
+  .custom-radio-group,
+  .custom-checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 /* ========== PRICE SUMMARY ========== */
 .price-summary {
