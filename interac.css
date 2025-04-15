@@ -2,12 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "proxima-nova", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     /* font-weight: 700; */
     font-style: normal;
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
   }
   
+/* Apply Montserrat to headings and navigation */
+h1, h2, h3, h4, h5, h6,
+.nav-links a,
+button,
+.continue-btn,
+.contact-button {
+  font-family: 'Montserrat', sans-serif;
+}
+
   /* Navbar Styles */
   /* Header (default transparent) */
   .main-header {
