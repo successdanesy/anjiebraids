@@ -10,14 +10,6 @@
   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
-/* Apply Montserrat to headings and navigation */
-h1, h2, h3, h4, h5, h6,
-.nav-links a,
-button,
-.continue-btn,
-.contact-button {
-  font-family: 'Montserrat', sans-serif;
-}
 
 
 /* Navbar Styles */
@@ -178,6 +170,7 @@ display: none;
 }
 
 .hero .container {
+  flex-direction: column;
   position: relative;
   z-index: 2;
 }
@@ -193,9 +186,10 @@ display: none;
 }
 
 .hero button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
-  cursor: pointer;
+  min-width: 200px; /* Ensures same width */
+  text-align: center;
   background-color: #9E1F46;
   color: #FDF3E7;
   border: 2px solid #9E1F46;
@@ -204,6 +198,7 @@ display: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 5px;
 }
+
 
 .hero button:hover {
   background-color: #15475E;
