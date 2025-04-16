@@ -142,7 +142,7 @@ display: none;
 
 /* Hero Section */
 .hero {
-  background-image: url('img/background1.jpeg');
+  background-image: url('img/background.jpeg');
   background-size: cover; /* Ensures full coverage, avoids distortion */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
