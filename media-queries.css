@@ -8,7 +8,7 @@
       padding: 12px 25px;
     }
   
-    .hero h1 {
+    .hero h1 { 
       font-size: 2.2em;
     }
   
@@ -100,6 +100,12 @@
       grid-template-columns: repeat(2, 1fr);
     }
   
+    .style-item{
+      /* margin: 10px; */
+      /* padding: 10px; */
+      border-radius: 10px;
+      background-color: #f8f8f8;
+    }
     .style-item img {
       height: 160px;
     }
