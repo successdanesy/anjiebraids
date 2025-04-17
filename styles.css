@@ -30,10 +30,19 @@ z-index: 1000;
 }
 
 .main-header.slidedown {
-background-color: #15475E;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-animation: slidedown 0.5s forwards;
+  background-color: #FFF; /* Light pink */
+  box-shadow: 0 2px 8px rgba(123, 67, 91, 0.2); /* Soft plum shadow */
+  animation: slidedown 0.5s forwards;
 }
+
+.main-header.slidedown .nav-links li a {
+  color: #7B435B;
+}
+
+.main-header.slidedown .t-menuburger span {
+  background-color: #7B435B;
+}
+
 
 @keyframes slidedown {
 from {
@@ -63,11 +72,12 @@ nav {
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #FFF0F5; /* Soft plum */
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
 }
+
 
 /* Menu icon */
 .menu-icon {
@@ -81,9 +91,10 @@ nav {
 .menu-icon span {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: #7B435B; /* Soft plum */
   transition: all 0.4s ease;
 }
+
 /* Base Hamburger Styles */
 .t-menuburger {
 display: inline-block;
@@ -101,7 +112,7 @@ display: block;
 position: absolute;
 height: 3px;
 width: 100%;
-background-color: #FDF3E7;
+background-color: #FFF0F5;
 border-radius: 2px;
 opacity: 1;
 left: 0;
@@ -190,9 +201,9 @@ display: none;
   margin: 10px;
   min-width: 200px; /* Ensures same width */
   text-align: center;
-  background-color: #9E1F46;
-  color: #FDF3E7;
-  border: 2px solid #9E1F46;
+  background-color: #FFF0F5;
+  color: #7B435B;
+  /* border: 2px solid #9E1F46; */
   font-size: 1em;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -201,14 +212,13 @@ display: none;
 
 
 .hero button:hover {
-  background-color: #15475E;
+  background-color: #7B435B;
   color: #FDF3E7;
 }
 
 /* About Section */
 .about {
-  background-color: #FDF3E7;
-  color: #15475E;
+  background-color: #FFF0F5; /* light nude */
   padding: 80px 40px;
   display: flex;
   justify-content: center;
@@ -223,18 +233,19 @@ display: none;
 .about h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #15475E;
+  color: #39383A;
 }
 
 .about p {
   font-size: 1.2em;
   margin-bottom: 20px;
-  color: #000;
+  color: #39383A;
 }
 
 .about button {
-  background-color: #9E1F46;
-  color: #FDF3E7;
+  background-color: #39383A;
+  /* background-color: #7B435B; */
+  color: #fff;
   border: none;
   padding: 12px 30px;
   font-size: 1em;
@@ -245,43 +256,41 @@ display: none;
 }
 
 .about button:hover {
-  background-color: #15475E;
-  color: #FDF3E7;
+  background-color: #7B435B;
+  color: #fff;
 }
 
 /*hairstyles section*/
 .hairstyles-section {
   padding: 2rem;
-  background: #15475E;
-  color: #fdfdfd;
-  
+  background: #FDF3E7; /* light nude */
 }
 
 .hairstyles-section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #fdfdfd
+  color: #39383A; /* deep gray */
 }
 
 .hairstyles-section h3 {
-  color: #15475E;
+  color: #7B435B; /* muted plum for headers inside cards */
 }
 
 .hairstyles-section .section-intro {
-  color: #fdfdfd;
+  color: #39383A;
   font-size: 1.1em;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-
 .hairstyles-section p {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  color: #000000;
+  color: #555555; /* softened gray for readability */
 }
+
 
 .hairstyles-grid {
   display: grid;

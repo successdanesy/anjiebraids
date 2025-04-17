@@ -1,7 +1,7 @@
-<button class="accordion">
-        <span></span>
-        <i class="fas fa-chevron-down icon"></i>
-      </button>
-      <div class="panel">
-        <p></p>
-      </div>
+header slide down is #FFF0F5; /* Light pink */
+#7B435B; soft plum
+
+
+alternative
+#FDF3E7; /* Light peach */
+
