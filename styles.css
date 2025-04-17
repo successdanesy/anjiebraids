@@ -30,7 +30,7 @@ z-index: 1000;
 }
 
 .main-header.slidedown {
-  background-color: #FFF; /* Light pink */
+  background-color: #FFFFFF;
   box-shadow: 0 2px 8px rgba(123, 67, 91, 0.2); /* Soft plum shadow */
   animation: slidedown 0.5s forwards;
 }
@@ -263,14 +263,14 @@ display: none;
 /*hairstyles section*/
 .hairstyles-section {
   padding: 2rem;
-  background: #FDF3E7; /* light nude */
+  background: #FFFFFF;
 }
 
 .hairstyles-section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #39383A; /* deep gray */
+  color: #7B435B;
 }
 
 .hairstyles-section h3 {
