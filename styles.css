@@ -11,7 +11,6 @@
 }
 
 
-
 /* Navbar Styles */
 /* Header (default transparent) */
 .main-header {
@@ -233,7 +232,8 @@ display: none;
 .about h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #39383A;
+  color: #7B435B;
+  /* color: #0A4A73 */
 }
 
 .about p {
@@ -243,7 +243,7 @@ display: none;
 }
 
 .about button {
-  background-color: #39383A;
+  background-color: #7B435B;
   /* background-color: #7B435B; */
   color: #fff;
   border: none;
@@ -256,8 +256,8 @@ display: none;
 }
 
 .about button:hover {
-  background-color: #7B435B;
-  color: #fff;
+  background-color: #FDF3E7;
+  color: #39383A;
 }
 
 /*hairstyles section*/
@@ -421,14 +421,14 @@ display: none;
 
 .extras-section {
   padding: 60px 20px;
-  background: #fff7f0;
+  background: #FFF0F5;
   text-align: center;
 }
 
 .extras-section h2 {
   font-size: 2em;
   margin-bottom: 40px;
-  color: #15475E;
+  color: #7B435B;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -459,7 +459,7 @@ display: none;
 .extra-card i {
   font-size: 32px;
   margin-bottom: 15px;
-  color: #9E1F46;
+  color: #7B435B;
 }
 
 .extra-card h3 {
@@ -478,7 +478,7 @@ display: none;
 
 /*rules section*/
 .rules-section {
-  background-color: #15475E;
+  background-color: #FFFFFF;
   color: #FDF3E7;
   padding: 60px 20px;
 }
@@ -487,13 +487,14 @@ display: none;
   text-align: center;
   font-size: 2.2em;
   margin-bottom: 15px;
-  color: #FDF3E7;
+  color: #7B435B;
 }
 
 .rules-section p {
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.1em;
+  color: #39383A;
 }
 
 .rules-container {
@@ -511,7 +512,7 @@ display: none;
 }
 
 .accordion-header {
-  background-color: #9E1F46; /* Burgundy */
+  background-color: #7B435B;
   color: #fff;
   padding: 16px 20px;
   display: flex;
@@ -523,7 +524,7 @@ display: none;
 }
 
 .accordion-header:hover {
-  background-color: #9E1F46;
+  background-color: #7B435B;
 }
 
 .accordion-header i {
@@ -549,8 +550,8 @@ display: none;
 }  
 
 .continue-btn {
-  background-color: #FDF3E7;
-  color: #15475E;
+  background-color: #FFF0F5;
+  color: #7B435B;
   padding: 12px 24px;
   border: none;
   font-size: 1em;
@@ -562,8 +563,8 @@ display: none;
 }
 
 .continue-btn:hover {
-  background-color: #9E1F46;
-  color: #fff;
+  background-color: #7B435B;
+  color: #FDF3E7;
 }
 
 /* .button-options {

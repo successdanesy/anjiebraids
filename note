@@ -1,6 +1,8 @@
 header slide down is #FFF0F5; /* Light pink */
 #7B435B; soft plum
 
+#39383A; /* Dark gray */
+
 
 alternative
 #FDF3E7; /* Light peach */
