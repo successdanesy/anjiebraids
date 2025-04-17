@@ -591,8 +591,8 @@ display: none;
 
 /*Contacts section*/
 .contact {
-padding: 80px 20px;
-background-color: #FDF3E7; /* Soft beige for continuity */
+padding: 20px 20px;
+background-color: #FFFFFF;
 }
 
 .contact-container {
@@ -615,7 +615,7 @@ align-items: center;
 .contact-text h2 {
 font-size: 2.4rem;
 font-weight: 700;
-color: #15475E;
+color: #39383A;
 margin: 0;
 }
 
@@ -623,7 +623,7 @@ margin: 0;
 font-size: 1.2rem;
 font-style: italic;
 line-height: 1.6;
-color: #555;
+color: #39383A;
 font-family: 'Open Sans', sans-serif;
 }
 
