@@ -28,14 +28,29 @@ button,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #15475E;
+    background-color: #ffffff;
     z-index: 1000;
+    }
+
+    .main-header .nav-links a{
+      color: #7B435B;
+    }
+    .main-header .t-menuburger span {
+      background-color: #7B435B;
     }
     
     .main-header.slidedown {
-      background-color: #15475E;
+      background-color: #ffffff;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       animation: slidedown 0.5s forwards;
+      }
+
+      .main-header.slidedown .nav-links li a {
+        color: #7B435B;
+      }
+      
+      .main-header.slidedown .t-menuburger span {
+        background-color: #7B435B;
       }
       
       @keyframes slidedown {
@@ -144,8 +159,8 @@ button,
 
 /* ========== BOOKING SECTION ========== */
 .booking-section {
-  background-color: #FDF3E7;
-  color: #15475E;
+  background-color: #FFF0F5;
+  color: #39383A;
   padding: 120px 20px 60px;
   text-align: center;
 }
@@ -158,7 +173,7 @@ button,
 .booking-container h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #9E1F46;
+  color:#7B435B;
 }
 
 .booking-container p {
@@ -207,8 +222,8 @@ button,
 
 /* ========== SUBMIT BUTTON ========== */
 .booking-btn {
-  background-color: #9E1F46;
-  color: #fff;
+  background-color: #FDF3E7;
+    color: #7B435B;
   padding: 14px 24px;
   font-size: 1rem;
   font-weight: bold;
@@ -221,7 +236,8 @@ button,
 }
 
 .booking-btn:hover {
-  background-color: #15475E;
+  background-color: #7B435B;
+    color: #ffffff;
 }
 
 /* ========== EXTRAS CHECKBOX GROUP ========== */
@@ -252,11 +268,11 @@ button,
   align-items: center;
   justify-content: center;
   padding: 12px;
-  border: 2px solid #9E1F46;
+  border: 2px solid #7B435B;
   border-radius: 0.5em;
   font-size: 0.95rem;
   font-family: "Poppins", sans-serif;
-  color: #9E1F46;
+  color: #7B435B;
   background-color: #fff;
   cursor: pointer;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
@@ -264,9 +280,9 @@ button,
 }
 
 .custom-checkbox-group input[type="checkbox"]:checked + label {
-  background-color: #9E1F46;
+  background-color: #7B435B;
   color: #fff;
-  border-color: #9E1F46;
+  border-color: #7B435B;
 }
 
 /* Responsive for both */
@@ -303,9 +319,8 @@ button,
 
 /*Contacts section*/
 .contact {
-  padding: 40px 20px;
-  /* background-color: #FDF3E7; */
-  background-color: #15475E;
+  padding: 20px 20px;
+  background-color: #FFF0F5;
   }
   
   .contact-container {
@@ -328,7 +343,7 @@ button,
   .contact-text h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #FDF3E7;
+  color: #7B435B;
   margin: 0;
   }
   
@@ -336,7 +351,7 @@ button,
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.6;
-  color: #FDF3E7;
+  color: #39383A;
   font-family: 'Open Sans', sans-serif;
   }
   
@@ -351,7 +366,7 @@ button,
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #9E1F46;
+  background-color: #7B435B;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -367,7 +382,8 @@ button,
   }
   
   .contact-button:hover {
-  background-color: #9E1F46;
+    background-color: #FDF3E7;
+    color: #7B435B;
   transform: scale(1.05);
   }
 

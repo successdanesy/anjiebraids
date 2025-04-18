@@ -263,7 +263,7 @@ display: none;
 /*hairstyles section*/
 .hairstyles-section {
   padding: 2rem;
-  background: #FFFFFF;
+  background: #FFF0F5;
 }
 
 .hairstyles-section h2 {
@@ -320,7 +320,7 @@ display: none;
 
 .style-info {
   padding: 0.5rem;
-  background-color: white;
+  background-color: #FFFFFF;
   text-align: center;
 }
 
@@ -478,7 +478,7 @@ display: none;
 
 /*rules section*/
 .rules-section {
-  background-color: #FFFFFF;
+  background-color: #FFF0F5;
   color: #FDF3E7;
   padding: 60px 20px;
 }
@@ -512,8 +512,8 @@ display: none;
 }
 
 .accordion-header {
-  background-color: #7B435B;
-  color: #fff;
+  background-color: #FFFFFF;
+  color: #39383A;
   padding: 16px 20px;
   display: flex;
   justify-content: space-between;
@@ -525,6 +525,7 @@ display: none;
 
 .accordion-header:hover {
   background-color: #7B435B;
+  color: #FFFFFF;
 }
 
 .accordion-header i {
@@ -550,8 +551,8 @@ display: none;
 }  
 
 .continue-btn {
-  background-color: #FFF0F5;
-  color: #7B435B;
+  background-color: #7B435B;
+  color: #FFFFFF;
   padding: 12px 24px;
   border: none;
   font-size: 1em;
@@ -563,8 +564,8 @@ display: none;
 }
 
 .continue-btn:hover {
-  background-color: #7B435B;
-  color: #FDF3E7;
+  background-color: #FDF3E7;
+  color: #7B435B;
 }
 
 /* .button-options {
@@ -592,7 +593,7 @@ display: none;
 /*Contacts section*/
 .contact {
 padding: 20px 20px;
-background-color: #FFFFFF;
+background-color: #FFF0F5;
 }
 
 .contact-container {
@@ -615,7 +616,7 @@ align-items: center;
 .contact-text h2 {
 font-size: 2.4rem;
 font-weight: 700;
-color: #39383A;
+color: #7B435B;
 margin: 0;
 }
 
@@ -638,7 +639,7 @@ justify-content: center;
 display: flex;
 align-items: center;
 gap: 10px;
-background-color: #2b2b2b;
+background-color: #7B435B;
 color: #fff;
 border: none;
 padding: 12px 20px;
@@ -654,7 +655,8 @@ font-size: 1.2rem;
 }
 
 .contact-button:hover {
-background-color: #9E1F46;
+  background-color: #FDF3E7;
+  color: #7B435B;
 transform: scale(1.05);
 }
 
