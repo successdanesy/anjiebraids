@@ -10,7 +10,6 @@
   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
-
 /* Navbar Styles */
 /* Header (default transparent) */
 .main-header {
@@ -19,7 +18,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-padding: 15px 30px;
+padding: 8px 20px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -54,7 +53,9 @@ to {
 
 /* Logo */
 .logo img {
-  max-height: 80px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  max-height: 100px;
   width: auto;
 }
 
@@ -67,7 +68,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 15px;
 }
 
 .nav-links li a {
