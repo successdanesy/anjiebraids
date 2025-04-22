@@ -17,6 +17,13 @@ button,
   font-family: 'Montserrat', sans-serif;
 }
 
+.body {
+    background-color: #FFF0F5;
+    color: #39383A;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+  }
+
   /* Navbar Styles */
   /* Header (default transparent) */
   .main-header {
