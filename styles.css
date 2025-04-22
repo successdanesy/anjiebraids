@@ -41,6 +41,21 @@ z-index: 1000;
   background-color: #7B435B;
 }
 
+/* Hide the slidedown logo by default */
+.logo-slidedown {
+  display: none;
+}
+
+/* Show slidedown logo and hide the default one when scrolling */
+.main-header.slidedown .logo-default {
+  display: none;
+}
+
+.main-header.slidedown .logo-slidedown {
+  display: block;
+}
+
+
 
 @keyframes slidedown {
 from {
@@ -621,7 +636,8 @@ display: none;
 }
 
 .cta-buttons button:hover {
-  background-color: #39383A;
+  background-color: #FDF3E7;
+  color: #7B435B;
 }
 
 
