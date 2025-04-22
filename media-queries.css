@@ -52,7 +52,7 @@
     }
   
     .logo img {
-      max-height: 90px;
+      max-height: 150px;
     }
 
     .main-header.menu-open {
@@ -218,7 +218,7 @@
     }
 
     .logo img {
-      max-height: 90px;
+      max-height: 120px;
     }
 
     /* Default states */
@@ -264,7 +264,7 @@
     }  
   
   .logo img {
-    max-height: 90px;
+    max-height: 100px;
   }
     
     .about h2 {
@@ -351,7 +351,7 @@
       }
 
       .logo img {
-        max-height: 90px;
+        max-height: 100px;
       }
 
         .hero h1 {
