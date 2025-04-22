@@ -33,11 +33,13 @@ button,
   z-index: 1000;
   }
   
-  /* Logo */
-  .logo img {
-    max-height: 60px;
-    width: auto;
-  }
+ /* Logo */
+.logo img {
+  margin-top: 10px;
+  margin-bottom: -20px;
+  max-height: 100px;
+  width: auto;
+}
   
   /* Navigation */
   nav {
@@ -178,8 +180,8 @@ button,
   }
 
   .interac-btn {
-    background-color: #FDF3E7;
-    color: #7B435B;
+    background-color: #7B435B;
+    color: #ffffff;
     padding: 14px 24px;
     font-size: 1rem;
     font-weight: bold;
@@ -191,8 +193,8 @@ button,
   }
 
   .interac-btn:hover {
-    background-color: #7B435B;
-    color: #ffffff;
+    background-color: #FFF0F5;
+    color: #7B435B;
   }
 
 /*Contacts section*/
