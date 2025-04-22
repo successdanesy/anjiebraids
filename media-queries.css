@@ -76,6 +76,24 @@
     .t-menuburger.active span {
       background-color: #7B435B;
     }
+
+    /* Default states */
+.logo-slidedown {
+  display: none;
+}
+
+/* Show the colored logo when header is slidedown or menu is open */
+.main-header.slidedown .logo-default,
+.main-header.menu-open .logo-default {
+  display: none;
+}
+
+.main-header.slidedown .logo-slidedown,
+.main-header.menu-open .logo-slidedown {
+  display: block;
+}
+
+
   }
   
   /* Mobile Devices (768px) */
@@ -202,6 +220,22 @@
     .logo img {
       max-height: 90px;
     }
+
+    /* Default states */
+.logo-slidedown {
+  display: none;
+}
+
+/* Show the colored logo when header is slidedown or menu is open */
+.main-header.slidedown .logo-default,
+.main-header.menu-open .logo-default {
+  display: none;
+}
+
+.main-header.slidedown .logo-slidedown,
+.main-header.menu-open .logo-slidedown {
+  display: block;
+}
   }
   
   /* Small Phones (576px) */
@@ -293,6 +327,22 @@
     .t-menuburger.active span {
       background-color: #7B435B;
     }
+
+    /* Default states */
+.logo-slidedown {
+  display: none;
+}
+
+/* Show the colored logo when header is slidedown or menu is open */
+.main-header.slidedown .logo-default,
+.main-header.menu-open .logo-default {
+  display: none;
+}
+
+.main-header.slidedown .logo-slidedown,
+.main-header.menu-open .logo-slidedown {
+  display: block;
+}
   }
 
     @media screen and (max-width: 400px) {
@@ -369,4 +419,20 @@
       .t-menuburger.active span {
         background-color: #7B435B;
       }
+
+      /* Default states */
+.logo-slidedown {
+  display: none;
+}
+
+/* Show the colored logo when header is slidedown or menu is open */
+.main-header.slidedown .logo-default,
+.main-header.menu-open .logo-default {
+  display: none;
+}
+
+.main-header.slidedown .logo-slidedown,
+.main-header.menu-open .logo-slidedown {
+  display: block;
+}
     }
