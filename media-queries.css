@@ -5,7 +5,7 @@
 /* Tablets and Below (1024px) */
 @media screen and (max-width: 1024px) {
     .main-header {
-      padding: 12px 25px;
+      padding: 5px 25px;
     }
   
     .hero h1 { 
@@ -18,6 +18,12 @@
   
     .hero button {
       font-size: 1em;
+    }
+
+    .close {
+      font-size: 45px;
+      top: 10px;
+      right: 35px;
     }
   
     .nav-links {
@@ -308,6 +314,12 @@
       display: flex;
     }
 
+    .close {
+      font-size: 45px;
+      top: 10px;
+      right: 35px;
+    }
+
     .main-header.menu-open {
       background-color: #fff !important; /* Beige */
     }
@@ -436,5 +448,11 @@
 .main-header.slidedown .logo-slidedown,
 .main-header.menu-open .logo-slidedown {
   display: block;
+}
+
+.close {
+  font-size: 45px;
+  top: 10px;
+  right: 35px;
 }
   }

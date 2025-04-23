@@ -390,7 +390,7 @@ display: none;
   top: 30px;
   right: 45px;
   color: #fff;
-  font-size: 700px;
+  font-size: 70px;
   font-weight: bold;
   cursor: pointer;
   z-index: 10001; /* Ensure it's above even sticky headers */
