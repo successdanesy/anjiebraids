@@ -28,9 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('imageModal').style.display = "block";
   }
 
-  function closeModal() {
-    document.getElementById('imageModal').style.display = "none";
+// Existing closeModal function
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.classList.add('fade-out');
+  setTimeout(() => {
+    modal.style.display = "none";
+    modal.classList.remove('fade-out');
+  }, 400);
+}
+
+// Add this to close modal when clicking outside the image
+window.addEventListener('click', function (event) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  if (event.target === modal) {
+    closeModal();
   }
+});
+
 
   //fuction for the accordion in the rules section
   function toggleAccordion(element) {
