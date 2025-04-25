@@ -48,6 +48,17 @@ window.addEventListener('click', function (event) {
   }
 });
 
+function outsideClick(event) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+
+  // If clicked target is the modal itself (not the image or close button)
+  if (event.target === modal) {
+    closeModal();
+  }
+}
+
+
 
   //fuction for the accordion in the rules section
   function toggleAccordion(element) {
