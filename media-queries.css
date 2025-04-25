@@ -33,13 +33,17 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #FFF0F5;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.6s ease-in-out;
       opacity: 0;
       transform: translateY(-10px);
       transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+          background-color: #f8eae5;
+          background-color: rgba(253, 243, 231, 0.96);
+          backdrop-filter: blur(4px); /* adds subtle glass effect */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          z-index: 999;
     }
 
     .navlink li a{
@@ -117,13 +121,17 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #FFF0F5;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.6s ease-in-out;
       opacity: 0;
       transform: translateY(-10px);
       transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+          background-color: #f8eae5;
+          background-color: rgba(253, 243, 231, 0.96);
+          backdrop-filter: blur(4px); /* adds subtle glass effect */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          z-index: 999;
     }
 
     .navlink li a{
@@ -294,13 +302,17 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #FFF0F5;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.6s ease-in-out;
       opacity: 0;
       transform: translateY(-10px);
       transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+          background-color: #f8eae5;
+          background-color: rgba(253, 243, 231, 0.96);
+          backdrop-filter: blur(4px); /* adds subtle glass effect */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          z-index: 999;
     }
 
     .navlink li a{
@@ -400,13 +412,18 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #FFF0F5;
+        background-color: #f8eae5;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.6s ease-in-out;
         opacity: 0;
         transform: translateY(-10px);
         transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+          background-color: #f8eae5;
+          background-color: rgba(253, 243, 231, 0.96);
+          backdrop-filter: blur(4px); /* adds subtle glass effect */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          z-index: 999;
       }
 
       .navlink li a{
