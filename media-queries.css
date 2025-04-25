@@ -165,10 +165,7 @@
     }
   
     .modal-content {
-      max-width: 90%;
       max-height: 60vh;
-      margin: 10% auto;
-      display: block;
     }
   
     .close {
@@ -285,13 +282,6 @@
     .rules-section h2 {
         font-size: 1.8em;
     }
-
-    .modal-content {
-      max-width: 90%;
-      max-height: 60vh;
-      margin: 10% auto;
-      display: block;
-    }
   
     .menu-icon {
       display: flex;
@@ -397,13 +387,6 @@
       
         .booking-section .section-title {
           font-size: 20px;
-        }
-
-        .modal-content {
-          max-width: 90%;
-          max-height: 60vh;
-          margin: 10% auto;
-          display: block;
         }
       
         .footer-note {
